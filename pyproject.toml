@@ -8,11 +8,12 @@ requires-python = "==3.11.*"
 
 dependencies = [
     "datasets",
-    "evidently>=0.4.36",
+    "evidently[llm]>=0.4.36",
+    "ipykernel>=6.29.5",
     "jupyter",
-    "kaleido==0.2.1",  # higher versions have wrong wheels
+    "kaleido==0.2.1", # higher versions have wrong wheels
     "nannyml",
-    "numpy<2",  # Evidently requirement
+    "numpy<2", # Evidently requirement
     "pandas",
     "ruff",
     "scikit-learn",
