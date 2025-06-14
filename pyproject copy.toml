@@ -1,0 +1,32 @@
+[project]
+name = "MLOps_course_AGH_lab_5"
+version = "1.0.0"
+description = ""
+readme = "README.md"
+
+requires-python = "==3.11.*"
+
+dependencies = [
+    "datasets",
+    "evidently[llm]>=0.6.1",
+    "ipykernel>=6.29.5",
+    "jupyter",
+    "kaleido==0.2.1", # higher versions have wrong wheels
+    "nannyml>=0.5.3",
+    "numpy<2", # Evidently requirement
+    "pandas",
+    "ruff",
+    "scikit-learn",
+    "sentence-transformers",
+    "transformers[torch]",
+]
+
+[tool.uv.sources]
+torch = [
+    { index = "pytorch-cu121" }
+]
+
+[[tool.uv.index]]
+name = "pytorch-cu121"
+url = "https://download.pytorch.org/whl/cu121"
+explicit = true

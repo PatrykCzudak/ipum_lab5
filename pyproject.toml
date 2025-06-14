@@ -8,11 +8,12 @@ requires-python = "==3.11.*"
 
 dependencies = [
     "datasets",
-    "evidently[llm]>=0.4.36",
+    "evidently>=0.4.36",
     "ipykernel>=6.29.5",
     "jupyter",
+    "kagglehub>=0.3.12",
     "kaleido==0.2.1", # higher versions have wrong wheels
-    "nannyml",
+    "nannyml>=0.5.3",
     "numpy<2", # Evidently requirement
     "pandas",
     "ruff",
